@@ -26,7 +26,7 @@ author = 'Geoscan'
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+release = ''
 
 
 # -- General configuration ---------------------------------------------------
@@ -113,7 +113,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = '401-docdoc'
+htmlhelp_basename = 'Geoscan_401_Manual'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -121,27 +121,39 @@ htmlhelp_basename = '401-docdoc'
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
-    # 'papersize': 'letterpaper',
+    'papersize': 'openany',
 
     # The font size ('10pt', '11pt' or '12pt').
     #
-    # 'pointsize': '10pt',
+    'pointsize': '10pt',
 
     # Additional stuff for the LaTeX preamble.
     #
-    # 'preamble': '',
+    'preamble': '',
 
     # Latex figure (float) alignment
     #
-    # 'figure_align': 'htbp',
+    'figure_align': 'H',
+    
+        'fontpkg': r'''
+
+''',
+    # Additional stuff for the LaTeX preamble.
+    'preamble': r"""
+    \usepackage{setspace}
+    \usepackage{fontspec}
+    \setmainfont[Ligatures=TeX]{Georgia}
+    \setsansfont[Ligatures=TeX]{Arial}
+    """,
+
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, '401-doc.tex', '401-doc Documentation',
-     'Geoscan', 'manual'),
+    (master_doc, 'Geoscan_401_Manual.tex', '',
+     '', 'manual'),
 ]
 
 
@@ -150,7 +162,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, '401-doc', '401-doc Documentation',
+    (master_doc, 'Geoscan_401_Manual', 'Геоскан 401 Руководство по эксплуатации',
      [author], 1)
 ]
 
@@ -161,8 +173,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, '401-doc', '401-doc Documentation',
-     author, '401-doc', 'One line description of project.',
+    (master_doc, 'Geoscan_401_Manual', 'Геоскан 401 Руководство по эксплуатации',
+     author, 'Geoscan_401_Manual', 'One line description of project.',
      'Miscellaneous'),
 ]
 
