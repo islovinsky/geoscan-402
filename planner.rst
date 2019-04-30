@@ -417,7 +417,7 @@ ________________________
 
 .. figure:: _static/_images/planner41.png
    :align: center
-   :width: 300
+   :width: 200
 
    Пример полета по требованию
 
@@ -432,7 +432,7 @@ ________________________
 
 .. figure:: _static/_images/planner42.png
    :align: center
-   :width: 300
+   :width: 200
 
    Значок дистанционного управления
 
@@ -446,7 +446,7 @@ ________________________
 
 .. figure:: _static/_images/planner43.png
    :align: right
-   :width: 300
+   :width: 200
 
    Окно дистанционного управления
 
