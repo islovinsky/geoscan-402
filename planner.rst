@@ -417,7 +417,7 @@ ________________________
 
 .. figure:: _static/_images/planner41.png
    :align: center
-   :width: 200
+   :width: 400
 
    Пример полета по требованию
 
