@@ -6,7 +6,7 @@
 
 .. image:: _static/_images/Uav.png
    :align: center
-   :width: 639
+   :width: 480
    :alt: Узлы и детали
 
 
